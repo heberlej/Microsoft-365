@@ -10,4 +10,4 @@ Identitäten & Zugriff: Benutzer, Gruppen, Conditional Access, App-Registrierung
 
 | Skript | Zweck |
 |---|---|
-| – | – |
+| [UPN-to-Mail-Attribute](scripts/UPN-to-Mail-Attribute/) | AD-Attribut `mail` aus dem UPN setzen (Vorbereitung Entra Connect) |
