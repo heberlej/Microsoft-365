@@ -1,0 +1,10 @@
+.DS_Store
+*.pfx
+*.pem
+*.key
+*.cer
+.env
+*.secret*
+secrets/
+*credentials*
+*.log
