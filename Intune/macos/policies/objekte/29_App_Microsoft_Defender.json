@@ -1,0 +1,6 @@
+{
+  "@odata.type": "#microsoft.graph.macOSMicrosoftDefenderApp",
+  "displayName": "Microsoft Defender",
+  "description": "Microsoft Defender for Endpoint für macOS. (MAC-APP Baseline)",
+  "publisher": "Microsoft"
+}

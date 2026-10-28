@@ -1,0 +1,14 @@
+{
+  "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+  "displayName": "MAC-ENR-Einschraenkung-NurFirmengeraete",
+  "description": "macOS: nur firmeneigene Geräte (ADE) dürfen sich einschreiben.",
+  "platformType": "mac",
+  "platformRestriction": {
+    "platformBlocked": false,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": null,
+    "osMaximumVersion": null,
+    "blockedManufacturers": [],
+    "blockedSkus": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
+  "displayName": "Microsoft Edge",
+  "description": "Microsoft Edge, Kanal Stable. (MAC-APP Baseline)",
+  "publisher": "Microsoft",
+  "channel": "stable"
+}

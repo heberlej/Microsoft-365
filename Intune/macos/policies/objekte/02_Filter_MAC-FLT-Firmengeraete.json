@@ -1,0 +1,7 @@
+{
+  "displayName": "MAC-FLT-Firmengeraete",
+  "description": "Nur firmeneigene Macs (über ADE eingeschrieben).",
+  "platform": "macOS",
+  "rule": "(device.deviceOwnership -eq \"Corporate\")",
+  "assignmentFilterManagementType": "devices"
+}

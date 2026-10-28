@@ -1,0 +1,37 @@
+{
+  "primaryAccountFullName": "{{username}}",
+  "enableRestrictEditing": true,
+  "primaryAccountUserName": "{{partialupn}}",
+  "depProfileAdminAccountPasswordRotationSetting": {
+    "autoRotationPeriodInDays": 90
+  },
+  "supportDepartment": "__SUPPORT_NAME__",
+  "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "TOS",
+    "Diagnostics",
+    "Privacy",
+    "ScreenTime",
+    "FileVault",
+    "iCloudDiagnostics",
+    "Registration",
+    "UnlockWithWatch",
+    "Welcome",
+    "Wallpaper",
+    "TermsOfAddress",
+    "Lockdown"
+  ],
+  "isMandatory": true,
+  "hideAdminAccount": true,
+  "waitForDeviceConfiguredConfirmation": true,
+  "adminAccountFullName": "Mac Admin",
+  "profileRemovalDisabled": true,
+  "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
+  "requiresUserAuthentication": true,
+  "supervisedModeEnabled": true,
+  "adminAccountUserName": "macadmin",
+  "description": "Setup-Assistent mit Entra-Anmeldung + Platform SSO, betreut, MDM nicht entfernbar, auf Endkonfiguration warten, verstecktes LAPS-Admin-Konto (90 Tage Rotation).",
+  "supportPhoneNumber": "__SUPPORT_TELEFON__",
+  "displayName": "MAC-ENR-ADE-Standard",
+  "awaitDeviceConfiguredConfirmation": true
+}

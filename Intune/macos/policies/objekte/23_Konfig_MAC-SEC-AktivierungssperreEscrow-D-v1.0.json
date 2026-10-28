@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
+  "displayName": "MAC-SEC-AktivierungssperreEscrow-D-v1.0",
+  "description": "Aktivierungssperre auf betreuten Macs erlauben – Intune hinterlegt den Bypass-Code (Gerät bleibt nach Reset ohne Apple-ID entsperrbar).",
+  "activationLockWhenSupervisedAllowed": true,
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

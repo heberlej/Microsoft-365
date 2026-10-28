@@ -1,0 +1,36 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "description": "macOS N-1 (>= 26), SIP, FileVault, Firewall + Tarnmodus, Gatekeeper, Kennwort >= 8 Zeichen, Sperre <= 15 min, Defender-Risiko max. niedrig. Nicht konform nach 72 h Kulanz.",
+  "displayName": "MAC-CMP-Basis-v1.0",
+  "passwordRequired": true,
+  "passwordBlockSimple": false,
+  "passwordMinimumLength": 8,
+  "passwordMinutesOfInactivityBeforeLock": 15,
+  "passwordRequiredType": "deviceDefault",
+  "osMinimumVersion": "26.0",
+  "systemIntegrityProtectionEnabled": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "low",
+  "storageRequireEncryption": true,
+  "gatekeeperAllowedAppSource": "macAppStoreAndIdentifiedDevelopers",
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": false,
+  "firewallEnableStealthMode": true,
+  "scheduledActionsForRule": [
+    {
+      "ruleName": "PasswordRequired",
+      "scheduledActionConfigurations": [
+        {
+          "actionType": "block",
+          "gracePeriodHours": 72,
+          "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+          "notificationMessageCCList": []
+        }
+      ]
+    }
+  ],
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

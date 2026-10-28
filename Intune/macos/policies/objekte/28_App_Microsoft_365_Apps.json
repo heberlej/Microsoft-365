@@ -1,0 +1,6 @@
+{
+  "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
+  "displayName": "Microsoft 365 Apps",
+  "description": "Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, Teams. (MAC-APP Baseline)",
+  "publisher": "Microsoft"
+}

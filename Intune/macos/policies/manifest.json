@@ -1,0 +1,235 @@
+{
+  "quelle": "Intune-Export heberle365, 27.10.2026",
+  "platzhalter": {
+    "__LOGINFENSTER_TEXT__": "Text im Anmeldefenster",
+    "__ORG_NAME__": "Kontoname in Platform SSO",
+    "__SUPPORT_NAME__": "ADE Support-Abteilung",
+    "__SUPPORT_TELEFON__": "ADE Support-Telefon"
+  },
+  "objekte": [
+    {
+      "nr": 1,
+      "typ": "Gruppe",
+      "name": "MAC-GRP-Geraete-Alle",
+      "datei": "objekte/01_Gruppe_MAC-GRP-Geraete-Alle.json",
+      "zuweisung": "keine"
+    },
+    {
+      "nr": 2,
+      "typ": "Filter",
+      "name": "MAC-FLT-Firmengeraete",
+      "datei": "objekte/02_Filter_MAC-FLT-Firmengeraete.json",
+      "zuweisung": "keine"
+    },
+    {
+      "nr": 3,
+      "typ": "Katalog",
+      "name": "MAC-APP-AnyDesk-Berechtigungen-D-v1.0",
+      "datei": "objekte/03_Katalog_MAC-APP-AnyDesk-Berechtigungen-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 4,
+      "typ": "Katalog",
+      "name": "MAC-APP-BetterDisplay-Berechtigungen-D-v1.0",
+      "datei": "objekte/04_Katalog_MAC-APP-BetterDisplay-Berechtigungen-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 5,
+      "typ": "Katalog",
+      "name": "MAC-APP-DisplayLink-Berechtigungen-D-v1.0",
+      "datei": "objekte/05_Katalog_MAC-APP-DisplayLink-Berechtigungen-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 6,
+      "typ": "Katalog",
+      "name": "MAC-APP-Edge-Sicherheit-D-v1.0",
+      "datei": "objekte/06_Katalog_MAC-APP-Edge-Sicherheit-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 7,
+      "typ": "Katalog",
+      "name": "MAC-APP-Office-Anmeldung-D-v1.0",
+      "datei": "objekte/07_Katalog_MAC-APP-Office-Anmeldung-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 8,
+      "typ": "Katalog",
+      "name": "MAC-APP-OneDrive-D-v1.0",
+      "datei": "objekte/08_Katalog_MAC-APP-OneDrive-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 9,
+      "typ": "Katalog",
+      "name": "MAC-APP-RustDesk-Berechtigungen-D-v1.0",
+      "datei": "objekte/09_Katalog_MAC-APP-RustDesk-Berechtigungen-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 10,
+      "typ": "Katalog",
+      "name": "MAC-AUTH-PlatformSSO-D-v1.0",
+      "datei": "objekte/10_Katalog_MAC-AUTH-PlatformSSO-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 11,
+      "typ": "Katalog",
+      "name": "MAC-DEF-Antivirus-Netzwerkschutz-D-v1.0",
+      "datei": "objekte/11_Katalog_MAC-DEF-Antivirus-Netzwerkschutz-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 12,
+      "typ": "Katalog",
+      "name": "MAC-DEF-Erweiterungen-TCC-D-v1.0",
+      "datei": "objekte/12_Katalog_MAC-DEF-Erweiterungen-TCC-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 13,
+      "typ": "Katalog",
+      "name": "MAC-NET-GlobalSecureAccess-D-v1.0",
+      "datei": "objekte/13_Katalog_MAC-NET-GlobalSecureAccess-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 14,
+      "typ": "Katalog",
+      "name": "MAC-SEC-Anmeldefenster-D-v1.0",
+      "datei": "objekte/14_Katalog_MAC-SEC-Anmeldefenster-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 15,
+      "typ": "Katalog",
+      "name": "MAC-SEC-Code-Sperre-D-v1.0",
+      "datei": "objekte/15_Katalog_MAC-SEC-Code-Sperre-D-v1.0.json",
+      "zuweisung": "gruppe"
+    },
+    {
+      "nr": 16,
+      "typ": "Katalog",
+      "name": "MAC-SEC-Einschraenkungen-D-v1.0",
+      "datei": "objekte/16_Katalog_MAC-SEC-Einschraenkungen-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 17,
+      "typ": "Katalog",
+      "name": "MAC-SEC-FileVault-D-v1.0",
+      "datei": "objekte/17_Katalog_MAC-SEC-FileVault-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 18,
+      "typ": "Katalog",
+      "name": "MAC-SEC-Firewall-D-v1.0",
+      "datei": "objekte/18_Katalog_MAC-SEC-Firewall-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 19,
+      "typ": "Katalog",
+      "name": "MAC-SEC-Gatekeeper-D-v1.0",
+      "datei": "objekte/19_Katalog_MAC-SEC-Gatekeeper-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 20,
+      "typ": "Katalog",
+      "name": "MAC-SEC-RecoveryLock-D-v1.0",
+      "datei": "objekte/20_Katalog_MAC-SEC-RecoveryLock-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 21,
+      "typ": "Katalog",
+      "name": "MAC-UPD-macOS-DDM-D-v1.0",
+      "datei": "objekte/21_Katalog_MAC-UPD-macOS-DDM-D-v1.0.json",
+      "zuweisung": "gruppe"
+    },
+    {
+      "nr": 22,
+      "typ": "Katalog",
+      "name": "MAC-UPD-MicrosoftApps-D-v1.0",
+      "datei": "objekte/22_Katalog_MAC-UPD-MicrosoftApps-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 23,
+      "typ": "Konfig",
+      "name": "MAC-SEC-AktivierungssperreEscrow-D-v1.0",
+      "datei": "objekte/23_Konfig_MAC-SEC-AktivierungssperreEscrow-D-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 24,
+      "typ": "Compliance",
+      "name": "MAC-CMP-Basis-v1.0",
+      "datei": "objekte/24_Compliance_MAC-CMP-Basis-v1.0.json",
+      "zuweisung": "gruppe+filter"
+    },
+    {
+      "nr": 25,
+      "typ": "Attribut",
+      "name": "MAC-ATTR-LokaleAdmins",
+      "datei": "objekte/25_Attribut_MAC-ATTR-LokaleAdmins.json",
+      "zuweisung": "gruppe"
+    },
+    {
+      "nr": 26,
+      "typ": "Attribut",
+      "name": "MAC-ATTR-FileVaultStatus",
+      "datei": "objekte/26_Attribut_MAC-ATTR-FileVaultStatus.json",
+      "zuweisung": "gruppe"
+    },
+    {
+      "nr": 27,
+      "typ": "Attribut",
+      "name": "MAC-ATTR-Akkuzustand",
+      "datei": "objekte/27_Attribut_MAC-ATTR-Akkuzustand.json",
+      "zuweisung": "gruppe"
+    },
+    {
+      "nr": 28,
+      "typ": "App",
+      "name": "Microsoft 365 Apps",
+      "datei": "objekte/28_App_Microsoft_365_Apps.json",
+      "zuweisung": "gruppe+filter (erforderlich)"
+    },
+    {
+      "nr": 29,
+      "typ": "App",
+      "name": "Microsoft Defender",
+      "datei": "objekte/29_App_Microsoft_Defender.json",
+      "zuweisung": "gruppe+filter (erforderlich)"
+    },
+    {
+      "nr": 30,
+      "typ": "App",
+      "name": "Microsoft Edge",
+      "datei": "objekte/30_App_Microsoft_Edge.json",
+      "zuweisung": "gruppe+filter (erforderlich)"
+    },
+    {
+      "nr": 31,
+      "typ": "Einschreibung",
+      "name": "MAC-ENR-Einschraenkung-NurFirmengeraete",
+      "datei": "objekte/31_Einschreibung_MAC-ENR-Einschraenkung-NurFirmengeraete.json",
+      "zuweisung": "alle Benutzer"
+    },
+    {
+      "nr": 32,
+      "typ": "ADE",
+      "name": "MAC-ENR-ADE-Standard",
+      "datei": "objekte/32_ADE_MAC-ENR-ADE-Standard.json",
+      "zuweisung": "Standardprofil je ADE-Token"
+    }
+  ]
+}

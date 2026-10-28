@@ -1,0 +1,9 @@
+{
+  "displayName": "MAC-ATTR-Akkuzustand",
+  "description": "Zustand und Ladezyklen des Akkus.",
+  "customAttributeName": null,
+  "customAttributeType": "string",
+  "runAsAccount": "system",
+  "fileName": "MAC-ATTR-Akkuzustand.sh",
+  "scriptContent": "IyEvYmluL3pzaAojIE1BQy1BVFRSLUFra3V6dXN0YW5kIOKAkyBadXN0YW5kIHVuZCBMYWRlenlrbGVuIGRlcyBBa2t1cy4KYmF0PSQoc3lzdGVtX3Byb2ZpbGVyIFNQUG93ZXJEYXRhVHlwZSAyPi9kZXYvbnVsbCk7IGM9JChlY2hvICIkYmF0IiB8IGF3ayAtRic6ICcgJy9Db25kaXRpb24ve3ByaW50ICQyOyBleGl0fScpOyBuPSQoZWNobyAiJGJhdCIgfCBhd2sgLUYnOiAnICcvQ3ljbGUgQ291bnQve3ByaW50ICQyOyBleGl0fScpOyBpZiBbIC16ICIkYyIgXTsgdGhlbiBlY2hvICJLZWluIEFra3UiOyBlbHNlIGVjaG8gIiRjICgkbiBaeWtsZW4pIjsgZmkK"
+}

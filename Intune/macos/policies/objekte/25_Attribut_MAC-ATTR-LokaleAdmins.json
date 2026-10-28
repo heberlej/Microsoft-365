@@ -1,0 +1,9 @@
+{
+  "displayName": "MAC-ATTR-LokaleAdmins",
+  "description": "Mitglieder der lokalen Admin-Gruppe (ohne root).",
+  "customAttributeName": null,
+  "customAttributeType": "string",
+  "runAsAccount": "system",
+  "fileName": "MAC-ATTR-LokaleAdmins.sh",
+  "scriptContent": "IyEvYmluL3pzaAojIE1BQy1BVFRSLUxva2FsZUFkbWlucyDigJMgTWl0Z2xpZWRlciBkZXIgbG9rYWxlbiBBZG1pbi1HcnVwcGUgKG9obmUgcm9vdCkuCmRzY2wgLiAtcmVhZCAvR3JvdXBzL2FkbWluIEdyb3VwTWVtYmVyc2hpcCAyPi9kZXYvbnVsbCB8IGN1dCAtZCcgJyAtZjItIHwgdHIgJyAnICdcbicgfCBncmVwIC12IC1FICdeKHJvb3R8Xy4qKSQnIHwgcGFzdGUgLXNkICcsJyAtCg=="
+}

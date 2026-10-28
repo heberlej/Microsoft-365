@@ -1,0 +1,131 @@
+{
+  "name": "MAC-APP-DisplayLink-Berechtigungen-D-v1.0",
+  "description": "DisplayLink Manager: Bildschirmaufnahme darf der Benutzer selbst erlauben (Pflicht für DisplayLink); Agent und Privileged Helper (Team 73YQY62QM3) als verwaltete Anmeldeobjekte.",
+  "platforms": "macOS",
+  "technologies": "mdm,appleRemoteManagement",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settings": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture",
+                        "groupSettingCollectionValue": [
+                          {
+                            "children": [
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifier",
+                                "simpleSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "value": "com.displaylink.DisplayLinkUserAgent"
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype",
+                                "choiceSettingValue": {
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype_0",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_coderequirement",
+                                "simpleSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "value": "anchor apple generic and identifier \"com.displaylink.DisplayLinkUserAgent\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"73YQY62QM3\")"
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_staticcode",
+                                "choiceSettingValue": {
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_staticcode_false",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization",
+                                "choiceSettingValue": {
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization_2",
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.servicemanagement_rules",
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                        "choiceSettingValue": {
+                          "value": "com.apple.servicemanagement_rules_item_ruletype_4",
+                          "children": []
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "value": "73YQY62QM3"
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_comment",
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "value": "DisplayLink"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

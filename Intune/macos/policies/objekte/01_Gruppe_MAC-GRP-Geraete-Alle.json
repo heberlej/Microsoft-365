@@ -1,0 +1,12 @@
+{
+  "displayName": "MAC-GRP-Geraete-Alle",
+  "description": "Alle von Intune verwalteten macOS-Geräte (dynamisch). Ziel aller MAC-* Objekte.",
+  "mailEnabled": false,
+  "mailNickname": "mac-geraete-alle",
+  "securityEnabled": true,
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "membershipRule": "(device.deviceOSType -eq \"MacMDM\")",
+  "membershipRuleProcessingState": "On"
+}

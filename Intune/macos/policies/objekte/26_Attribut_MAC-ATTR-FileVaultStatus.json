@@ -1,0 +1,9 @@
+{
+  "displayName": "MAC-ATTR-FileVaultStatus",
+  "description": "FileVault-Status laut fdesetup.",
+  "customAttributeName": null,
+  "customAttributeType": "string",
+  "runAsAccount": "system",
+  "fileName": "MAC-ATTR-FileVaultStatus.sh",
+  "scriptContent": "IyEvYmluL3pzaAojIE1BQy1BVFRSLUZpbGVWYXVsdFN0YXR1cyDigJMgRmlsZVZhdWx0LVN0YXR1cyBsYXV0IGZkZXNldHVwLgpmZGVzZXR1cCBzdGF0dXMgfCBoZWFkIC0xCg=="
+}
