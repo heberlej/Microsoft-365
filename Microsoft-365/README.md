@@ -12,3 +12,4 @@ Allgemeine M365-Themen: Lizenzen, Tenant-Einstellungen, Teams, SharePoint, OneDr
 |---|---|
 | [Connect-AnyService](scripts/Connect-AnyService/) | GUI: per Häkchen mit Exchange Online, Graph, Teams, PnP & Co. verbinden |
 | [Teams-LogOff](scripts/Teams-LogOff/) | Teams (klassisch) komplett abmelden und Cache/Anmeldedaten zurücksetzen |
+| [SharePoint-OneDrive-Sync-GPO](scripts/SharePoint-OneDrive-Sync-GPO/) | Bibliotheks-IDs aller SharePoint-Seiten für die automatische OneDrive-Synchronisation (GPO) |

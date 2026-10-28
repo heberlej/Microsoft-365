@@ -11,3 +11,4 @@ Geräteverwaltung (MDM/MAM): Konfigurationsprofile, Compliance-Richtlinien, App-
 | Skript | Zweck |
 |---|---|
 | [SecureBoot-CA2023-Check](scripts/SecureBoot-CA2023-Check/) | Erkennungsskript: Secure-Boot-Zertifikat Windows UEFI CA 2023 ausgerollt? |
+| [Autopilot-HardwareHash-to-Blob](scripts/Autopilot-HardwareHash-to-Blob/) | Autopilot-Hash auslesen und per AzCopy in Azure Blob Storage hochladen |
