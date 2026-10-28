@@ -13,6 +13,3 @@ Sammlung von Skripten, Anleitungen und Notizen rund um Microsoft 365.
 
 Jeder Bereich hat eine eigene `README.md` und einen Unterordner `scripts/`.
 
-## Hinweis
-
-Keine Zugangsdaten, Tenant-IDs, Client-Secrets oder Zertifikate einchecken – das Repository ist öffentlich.
