@@ -1,0 +1,82 @@
+{
+  "id": "e40fba95-d54c-4c93-8720-eae3d122d6b3",
+  "templateId": null,
+  "displayName": "CA209-Benutzer-AzureManagement-BLOCK-NichtAdmins",
+  "createdDateTime": "2026-10-26T19:53:56.0839454Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [
+        "62e90394-69f5-4237-9190-012177145e10",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "17315797-102d-40b4-93e0-432062caca18",
+        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "11451d60-acb2-45eb-a7d6-43d0f0125c13",
+        "7698a772-787b-4ac8-901f-60d6b08affd2"
+      ],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('e40fba95-d54c-4c93-8720-eae3d122d6b3')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

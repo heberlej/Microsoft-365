@@ -1,0 +1,81 @@
+{
+  "id": "537a4ab4-31cd-491b-a2db-f7d80394f5a1",
+  "templateId": null,
+  "displayName": "CA201-Benutzer-AlleApps-GRANT-MFA-PasswortAendern-HohesBenutzerrisiko",
+  "createdDateTime": "2026-10-26T19:53:45.7175937Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "conditions": {
+    "userRiskLevels": [
+      "high"
+    ],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [
+        "d29b2b05-8046-44ba-8758-1e26182fcf32"
+      ],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": [
+      "mfa",
+      "passwordChange"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('537a4ab4-31cd-491b-a2db-f7d80394f5a1')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "persistentBrowser": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "value": null,
+      "type": null,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime",
+      "isEnabled": true
+    }
+  }
+}

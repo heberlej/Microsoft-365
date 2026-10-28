@@ -1,0 +1,108 @@
+{
+  "id": "154b57a7-0a33-4e7c-a21f-dbccc0b21c97",
+  "templateId": null,
+  "displayName": "CA202-Benutzer-AlleApps-GRANT-MFA-AnmelderisikoMittelHoch",
+  "createdDateTime": "2026-10-26T19:53:47.1871966Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [
+      "medium",
+      "high"
+    ],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [
+        "d29b2b05-8046-44ba-8758-1e26182fcf32"
+      ],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('154b57a7-0a33-4e7c-a21f-dbccc0b21c97')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000002",
+      "createdDateTime": "2021-12-01T08:00:00Z",
+      "modifiedDateTime": "2021-12-01T08:00:00Z",
+      "displayName": "Multifactor authentication",
+      "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password,microsoftAuthenticatorPush",
+        "password,softwareOath",
+        "password,hardwareOath",
+        "password,sms",
+        "password,voice",
+        "federatedMultiFactor",
+        "microsoftAuthenticatorPush,federatedSingleFactor",
+        "softwareOath,federatedSingleFactor",
+        "hardwareOath,federatedSingleFactor",
+        "sms,federatedSingleFactor",
+        "voice,federatedSingleFactor"
+      ],
+      "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('154b57a7-0a33-4e7c-a21f-dbccc0b21c97')/grantControls/authenticationStrength/combinationConfigurations",
+      "combinationConfigurations": []
+    }
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "persistentBrowser": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "value": null,
+      "type": null,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime",
+      "isEnabled": true
+    }
+  }
+}

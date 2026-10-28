@@ -1,0 +1,68 @@
+{
+  "id": "8a5dc7df-eeab-4dc7-89d4-5526f52c4447",
+  "templateId": null,
+  "displayName": "CA207-Benutzer-O365-NichtVerwaltet-SESSION-AppErzwungeneEinschraenkungen",
+  "createdDateTime": "2026-10-26T19:53:53.3949654Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    },
+    "devices": {
+      "deviceFilter": {
+        "mode": "exclude",
+        "rule": "device.isCompliant -eq True"
+      }
+    }
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "cloudAppSecurity": null,
+    "signInFrequency": null,
+    "persistentBrowser": null,
+    "secureSignInSession": null,
+    "applicationEnforcedRestrictions": {
+      "isEnabled": true
+    }
+  }
+}

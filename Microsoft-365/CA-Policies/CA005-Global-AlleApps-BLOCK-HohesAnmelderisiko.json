@@ -1,0 +1,59 @@
+{
+  "id": "081501c4-442e-4948-82be-6d660a52d2f7",
+  "templateId": null,
+  "displayName": "CA005-Global-AlleApps-BLOCK-HohesAnmelderisiko",
+  "createdDateTime": "2026-10-26T19:53:36.1530284Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [
+      "high"
+    ],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('081501c4-442e-4948-82be-6d660a52d2f7')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

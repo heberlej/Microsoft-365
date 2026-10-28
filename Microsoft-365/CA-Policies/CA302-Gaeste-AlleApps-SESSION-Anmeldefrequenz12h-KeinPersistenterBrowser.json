@@ -1,0 +1,68 @@
+{
+  "id": "75cb73b2-0f2b-4752-a6ed-d9607bbaa952",
+  "templateId": null,
+  "displayName": "CA302-Gaeste-AlleApps-SESSION-Anmeldefrequenz12h-KeinPersistenterBrowser",
+  "createdDateTime": "2026-10-26T19:54:00.4359997Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "excludeGuestsOrExternalUsers": null,
+      "includeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    }
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "value": 12,
+      "type": "hours",
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "timeBased",
+      "isEnabled": true
+    },
+    "persistentBrowser": {
+      "mode": "never",
+      "isEnabled": true
+    }
+  }
+}

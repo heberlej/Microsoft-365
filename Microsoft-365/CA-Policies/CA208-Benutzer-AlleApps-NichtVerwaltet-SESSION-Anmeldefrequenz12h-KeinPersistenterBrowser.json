@@ -1,0 +1,75 @@
+{
+  "id": "148ed2b1-58f8-41bb-adf2-3bf75d57476d",
+  "templateId": null,
+  "displayName": "CA208-Benutzer-AlleApps-NichtVerwaltet-SESSION-Anmeldefrequenz12h-KeinPersistenterBrowser",
+  "createdDateTime": "2026-10-26T19:53:54.8575177Z",
+  "modifiedDateTime": null,
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7b279253-7965-444e-abde-f643f78c1f44"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    },
+    "devices": {
+      "deviceFilter": {
+        "mode": "exclude",
+        "rule": "device.isCompliant -eq True"
+      }
+    }
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "value": 12,
+      "type": "hours",
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "timeBased",
+      "isEnabled": true
+    },
+    "persistentBrowser": {
+      "mode": "never",
+      "isEnabled": true
+    }
+  }
+}

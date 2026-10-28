@@ -1,0 +1,58 @@
+{
+  "id": "2087ea02-d932-4676-9c45-8d9044a99624",
+  "templateId": "0b2282f9-2862-4178-88b5-d79340b36cb8",
+  "displayName": "Legacy-Authentifizierung blockieren",
+  "createdDateTime": "2024-03-05T12:02:09.9167067Z",
+  "modifiedDateTime": null,
+  "state": "enabled",
+  "deletedDateTime": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "other"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "3828ffda-da9d-4b5d-a2c4-6282dfae93e7"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('2087ea02-d932-4676-9c45-8d9044a99624')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

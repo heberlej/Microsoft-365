@@ -1,0 +1,91 @@
+{
+  "id": "aa7dc042-b959-44cc-b46e-2d03f034507f",
+  "templateId": null,
+  "displayName": "ZTNA",
+  "createdDateTime": "2024-03-07T09:52:58.8376292Z",
+  "modifiedDateTime": "2026-01-31T10:24:35.259429Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "insiderRiskLevels": null,
+    "platforms": null,
+    "locations": null,
+    "devices": null,
+    "clientApplications": null,
+    "authenticationFlows": null,
+    "applications": {
+      "includeApplications": [
+        "50a3e151-c138-4858-83d2-c7016dd2222f",
+        "ec0aaf6f-8f84-4a76-9f4f-a0422af3359d",
+        "e35ca95f-b56a-4bde-9775-f8b8265b9db6",
+        "25a0b43d-b6ac-4dfe-a9ab-8dfd2f33eeb5"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "3828ffda-da9d-4b5d-a2c4-6282dfae93e7"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "compliantDevice",
+      "domainJoinedDevice",
+      "compliantApplication"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('aa7dc042-b959-44cc-b46e-2d03f034507f')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000002",
+      "createdDateTime": "2021-12-01T08:00:00Z",
+      "modifiedDateTime": "2021-12-01T08:00:00Z",
+      "displayName": "Multifactor authentication",
+      "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password,microsoftAuthenticatorPush",
+        "password,softwareOath",
+        "password,hardwareOath",
+        "password,sms",
+        "password,voice",
+        "federatedMultiFactor",
+        "microsoftAuthenticatorPush,federatedSingleFactor",
+        "softwareOath,federatedSingleFactor",
+        "hardwareOath,federatedSingleFactor",
+        "sms,federatedSingleFactor",
+        "voice,federatedSingleFactor"
+      ],
+      "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('aa7dc042-b959-44cc-b46e-2d03f034507f')/grantControls/authenticationStrength/combinationConfigurations",
+      "combinationConfigurations": []
+    }
+  }
+}
